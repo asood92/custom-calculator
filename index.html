@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Blood Alcohol Content Calculator</title>
+    </head>
+    <body id="container">
+        <div class="column-1">
+        <section id="user-input">
+            <h1>BoozeBoot 3000 - A Blood Alcohol Content Calculator</h1>
+            <p>Welcome to the BoozeBot 3000! I'm here to calculate your Blood Alcohol Content. To properly calculate your BAC, I'll need information from you. <br>
+        <form>
+            <ul class="flex-form">
+                <li><label for="gender">Select your gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select></li>
+                <li><label for="drinks">Number of drinks you've had:
+                    <input type="number" id="drinks"></li>
+                <li><label for="weight">Your weight in pounds:
+                    <input type="number" id="weight"></li>
+                <li><label for="elapsed-time">Hours have elapsed since you began drinking:
+                    <input type="number" id="elapsed-time"></li>
+                </ul>
+        </form>
+        </section>
+        </div>
+        <div class="column-2">
+            <section id="display-output">
+                <h1>BAC Calculation Results</h1><br>
+                Your BAC (blood alcohol content) is approximately: <span id="show-bac"></span><br>
+                You should: <span id="recommendation"></span>
+            </section>
+        </div>
+        <footer>
+            <script src="/js/script.js"></script>
+        </footer>
+    </body>
+</html>
