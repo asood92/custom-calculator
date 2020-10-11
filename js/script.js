@@ -36,7 +36,7 @@ function calculateBAC() {
     showBAC.innerHTML = rawAlcohol.toFixed(3)
     // Check to see if the calculated BAC is above or below legal limit, set recommendation
     if (rawAlcohol >= drinkingLimit) {
-        showRecommendation.innerHTML = "not drive";
+        showRecommendation.innerHTML = "not drive, it's illegal and you'll hurt yourself or others.";
     } else if ((rawAlcohol < drinkingLimit) && (rawAlcohol > 0)){
         showRecommendation.innerHTML = "not drive, but you are legally allowed to."
     } else {
@@ -48,4 +48,4 @@ function calculateBAC() {
 inputGender.addEventListener("input", calculateBAC)
 inputDrinks.addEventListener("input", calculateBAC)
 inputTime.addEventListener("input", calculateBAC)
-inputWeight.addEventListener("weight", calculateBAC)
+inputWeight.addEventListener("input", calculateBAC)
